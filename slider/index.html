@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="image">
+            <img src="images/1.jpg" alt="">
+        </div>
+        <div class="image">
+            <img src="images/2.jpg" alt="">
+        </div>
+        <div class="image">
+            <img src="images/3.jpg" alt="">
+        </div>
+        <div class="image">
+            <img src="images/4.jpg" alt="">
+        </div>
+        <div class="image">
+            <img src="images/5.jpg" alt="">
+        </div>
+        <div class="button">
+            <a onclick="nextimg(-1)" class="prev">&#10094;</a>
+            <a onclick="nextimg(1)" class="next">&#10095;</a>
+        </div>
+        <div class="dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

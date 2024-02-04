@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Forma 2 */
+.contenedor {
+  position: relative;
+  height: 100vh;
+}
+
+nav {
+  width: 100%;
+  background-color: transparent;
+  padding: 1.5rem;
+  /* Forma 2 */
+  position: absolute;
+  z-index: 0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: white;
+}
+
+.imagen-encabezado img {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  z-index: -1;
+  filter: brightness(60%);
+}
+
+main {
+  background-color: rgb(219, 215, 215);
+  width: 90%;
+  margin: auto;
+}
+
+main h1 {
+  text-align: center;
+}
+
+/* --------------------------------------Forma 2--------------------------- */
+
+/* #imagen-header1 {
+  z-index: -1;
+  position: absolute;
+  opacity: 1;
+}
+
+#imagen-header2 {
+  z-index: -2;
+  position: absolute;
+  opacity: 0;
+}
+
+#imagen-header3 {
+  z-index: -3;
+  position: absolute;
+  opacity: 0;
+} */
+
+/* ----------------------------------Forma 3--------------------------------------- */
+#imagen-header1 {
+  z-index: -1;
+  position: absolute;
+  /* opacity: 0; */
+}
+
+#imagen-header2 {
+  z-index: -2;
+  position: absolute;
+  /* opacity: 0; */
+}
+
+#imagen-header3 {
+  z-index: -3;
+  position: absolute;
+}
+
+.opacidad{
+  visibility: hidden;
+  transition: visibility 2s linear 500ms, opacity 3000ms;
+  opacity: 0;
+}
+
+.no_opacidad{
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 2s linear 0s, opacity 3000ms;
+}
+
+
+@keyframes opacidad {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes no_opacidad {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
